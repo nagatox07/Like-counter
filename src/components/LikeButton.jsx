@@ -7,10 +7,16 @@ const LikeButton = () => {
   const LikeIncrease=()=>{
     setLike((prev)=>prev+1)
   }
+  const LikeDecrease=()=>{
+    setLike((prev)=>prev-1)
+  }
   return (
     <Likeee>
         <h2>{like}</h2>
+        <div>
         <button onClick={LikeIncrease} className='likeButton'>Like</button>
+        <button onClick={LikeDecrease} className='likeButton'>DisLike</button>
+        </div>
     </Likeee>
   )
 }
